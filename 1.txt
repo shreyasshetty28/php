@@ -1,0 +1,19 @@
+<?php 
+$sub_1=95;
+$sub_2=85;
+$sub_3=74;
+$sub_4=64;
+$sub_5=53;
+$total=NULL;
+$average=NULL;
+$percentage=NULL;
+$grade=NULL;
+$total=$sub_1+$sub_2+$sub_3+$sub_4+$sub_5;
+$average=$total/5.0;
+$percentage=($total/500.0)*100;
+if ($average>=60)
+ $grade='A';
+else if ($average>=45 && $average<59)
+ $grade='B';
+else if($average>=35 && $average<45)
+ $grade='C';
